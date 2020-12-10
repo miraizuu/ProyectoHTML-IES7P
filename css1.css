@@ -37,16 +37,16 @@ h1 {
 
 /* Barra de navegación */
 
-.nav-bar {
+.navbar {
   overflow: hidden;
 }
 
-.nav-bar-right {
+.navbar-right {
 float: right; 
 }
 /* Estilo de los links */
 
-.nav-bar a {
+.navbar a {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -59,7 +59,7 @@ float: right;
 }
 
 
-.nav-bar a:hover {
+.navbar a:hover {
   color: black;
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -68,7 +68,7 @@ float: right;
   transition-timing-function: ease-out;
 }
 
-.nav-bar .icon {
+.navbar .icon {
   display: none;
 }
 
@@ -78,22 +78,22 @@ Enseña el icono que contiene todos los links que no
 aparecen (el icono). */
 
 @media screen and (max-width: 600px) {
-  .nav-bar a:not(:first-child) {display: none;}
-  .nav-bar a.icon {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .nav-bar.responsive {position: relative;}
-  .nav-bar.responsive a.icon {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  .nav-bar.responsive a {
+  .navbar.responsive a {
     float: none;
     display: block;
     text-align: left;

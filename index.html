@@ -17,11 +17,11 @@
 <img src="pfp.jpg" alt="Avatar">
 
 
-<div class="nav-bar">
+<div class="navbar">
 	<a class="activo" href="#Inicio">Inicio</a>
 	<a href="#Contenido">Contenido</a>
 	<a href="#Portfolio">Sobre mí</a>
-	<div class="nav-bar-right">
+	<div class="navbar-right">
 		<a href="http://pagina.iessietepalmas.org/" target="_blank">Siete Palmas</a>
 		<a href="#Contacto">Contacto</a>
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -41,7 +41,7 @@ a la barra de navegación cuando el usuario
 hace click en el icono */
 
 function myFunction() {
-	var x = document.getElementById("myNavbar")
+	var x = document.getElementById("nav-bar")
 	if (x.classname === "nav-bar") {
 		x.className += " responsive";
 	} else {
