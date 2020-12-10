@@ -1,3 +1,5 @@
+/* Filtro borroso, fondo */
+
 .page-bg {
   background: url('bg2.png');
   filter: blur(5px);
@@ -12,22 +14,22 @@
 img {
 	border-radius:50%;
 	position: absolute;
-	left: 45%;
+	left: 46%;
 	top: 40%;
 	border: 2px solid #000000;
 	filter: drop-shadow(0 0 0.75rem crimson);
 }
 
-h1 {
+.title {
 	font-family: Arial, Helvetica, sans-serif;
 	left: 0;
     line-height: 50px;
     margin-top: -100px;
     position: absolute;
     text-align: center;
-    top: 72%;
+    top: 63%; 
     width: 100%;
-	-webkit-animation: breathing 5s ease-out infinite normal;
+	-webkit-animation: breathing 4s ease-out infinite normal;
     animation: breathing 5s ease-out infinite normal;
 	-webkit-font-smoothing: antialiased;
 	color: #FFFAF0;
@@ -35,31 +37,23 @@ h1 {
 
 }
 
-/* Barra de navegación */
-
-.navbar {
+.topnav {
   overflow: hidden;
 }
 
-.navbar-right {
-float: right; 
-}
-/* Estilo de los links */
-
-.navbar a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: arial;
-  -webkit-font-smoothing: antialiased;
-  filter: drop-shadow(0 0 0.75rem black);
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+font-family: arial;
+-webkit-font-smoothing: antialiased;
+filter: drop-shadow(0 0 0.75rem black);
 }
 
-
-.navbar a:hover {
+.topnav a:hover {
   color: black;
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -68,37 +62,7 @@ float: right;
   transition-timing-function: ease-out;
 }
 
-.navbar .icon {
-  display: none;
-}
 
-/* Cuando la pantalla es de menos de 600 pixeles,
-esconde todos los links excepto el primero (Inicio).
-Enseña el icono que contiene todos los links que no
-aparecen (el icono). */
-
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 
 @-webkit-keyframes breathing {
   0% {
