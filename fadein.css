@@ -1,3 +1,6 @@
+/* José Carlos León Hernández 2ºCFGM */
+
+/* Animación fade-in (aparecer) */
 body { 
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1; 

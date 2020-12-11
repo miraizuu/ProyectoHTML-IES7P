@@ -1,3 +1,4 @@
+/* José Carlos León Hernández 2ºCFGM */
 /* Filtro borroso, fondo */
 
 .page-bg {
@@ -37,6 +38,8 @@ img {
 
 }
 
+/* Barra de navegación */
+
 .topnav {
   overflow: hidden;
 }
@@ -63,7 +66,7 @@ filter: drop-shadow(0 0 0.75rem black);
 }
 
 
-
+/* Animación div title */ 
 @-webkit-keyframes breathing {
   0% {
     -webkit-transform: scale(0.9);
